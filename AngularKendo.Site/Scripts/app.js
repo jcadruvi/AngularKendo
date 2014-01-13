@@ -7,8 +7,8 @@
         //'ngRoute'           // routing
     ]);
 
-    app.config(['$locationProvider', '$routeProvider',
-      function ($locationProvider, $routeProvider) {
+    app.config(['$locationProvider',
+      function ($locationProvider) {
           $locationProvider.hashPrefix('!');
           /*$routeProvider.
             when('/', {

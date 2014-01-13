@@ -1,9 +1,9 @@
 ﻿(function () {
     'use strict';
 
-    angular.module('app').directive('mobDatePicker', mobitorDatePicker);
+    angular.module('app').directive('kendoDatePicker', kendoDatePicker);
 
-    function mobitorDatePicker() {
+    function kendoDatePicker() {
         var self = {};
 
         self.restrict = 'A';

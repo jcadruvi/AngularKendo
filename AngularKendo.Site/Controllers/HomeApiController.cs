@@ -10,6 +10,7 @@ namespace Mvc4.Controllers
 {
     public class HomeApiController : ApiController
     {
+        [HttpGet]
         public IEnumerable<DropDown> Users()
         {
             IList<DropDown> users = new List<DropDown>();
@@ -18,6 +19,26 @@ namespace Mvc4.Controllers
             {
                 Id = 1,
                 Description = "John Doe"
+            });
+            users.Add(new DropDown
+            {
+                Id = 1,
+                Description = "Jane Doe"
+            });
+            users.Add(new DropDown
+            {
+                Id = 1,
+                Description = "Fred Doe"
+            });
+            users.Add(new DropDown
+            {
+                Id = 1,
+                Description = "John Smith"
+            });
+            users.Add(new DropDown
+            {
+                Id = 1,
+                Description = "John Smith"
             });
 
             return users;

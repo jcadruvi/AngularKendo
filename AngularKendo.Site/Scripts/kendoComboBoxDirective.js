@@ -8,11 +8,9 @@
 
         self.restrict = 'A';
         self.scope = {
-            selectData: '=',
-            onSelect: '=',
             mData: '=',
+            text: '=',
             value: '=',
-            width: '='
         };
 
         self.link = function (scope, element, attrs) {
@@ -22,9 +20,9 @@
 
             $(element[0]).kendoComboBox({
                 change: function () {
-                    if (scope.onSelect) {
-                        scope.onSelect(scope.selectData, this.value(), this.text());
-                    }
+                    scope.text = this.text();
+                    scope.value = this.value();
+                    scope.$apply();
                 },
                 dataTextField: dataTextField,
                 dataValueField: dataValueField,

@@ -5,6 +5,10 @@
         ['$scope', '$http', kendoController]);
 
     function kendoController($scope, $http) {
+
+        $scope.priorityText;
+        $scope.priorityValue;
+
         $http.get('api/HomeApi/Priorities').then(function (result) {
             $scope.priorities = result.data;
         });

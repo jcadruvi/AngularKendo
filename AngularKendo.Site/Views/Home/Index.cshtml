@@ -6,7 +6,7 @@
 <div data-ng-app="app" data-ng-controller="kendoController">
     <div class="fieldLine">
         <div class="label">Priority:</div>
-        <div data-kendo-combo-box data-m-data="priorities"></div>
+        <div data-kendo-combo-box data-m-data="priorities" data-text="priorityText" data-value="priorityValue"></div>
     </div>
     <br />
     <div>
@@ -30,6 +30,7 @@
         </div>
         <div>
             <div class="label">Priority:</div>
+            <div>{{ priorityValue }} - {{ priorityText }}</div>
         </div>
         <br />
         <div>

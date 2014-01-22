@@ -32,6 +32,7 @@ namespace AngularKendo.App_Start
                 .Include("~/Scripts/jquery-1.9.1.js",
                          "~/Scripts/angular.js",
                          "~/Scripts/app.js",
+                         "~/Scripts/kendoController.js",
                          "~/Scripts/kendoComboBoxDirective.js",
                          "~/Scripts/kendoDatePickerDirective.js",
                          "~/Scripts/knockout-2.2.1.min.js",

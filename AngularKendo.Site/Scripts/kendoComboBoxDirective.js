@@ -17,8 +17,8 @@
 
         self.link = function (scope, element, attrs) {
             var data,
-                dataTextField = 'description',
-                dataValueField = 'id';
+                dataTextField = 'Description',
+                dataValueField = 'Id';
 
             $(element[0]).kendoComboBox({
                 change: function () {

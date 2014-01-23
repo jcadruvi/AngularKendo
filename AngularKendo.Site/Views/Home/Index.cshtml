@@ -16,12 +16,12 @@
     <br />
     <div>
         <div class="label">Start Date:</div>
-        <div data-kendo-date-picker></div>
+        <div data-kendo-date-picker data-value="startDate"></div>
     </div>
     <br />
     <div>
         <div class="label">End Date:</div>
-        <div data-kendo-date-picker></div>
+        <div data-kendo-date-picker data-value="endDate"></div>
     </div>
 
     <div>
@@ -40,10 +40,12 @@
         <br />
         <div>
             <div class="label">Start Date:</div>
+            <div>{{ startDate | date }}</div>
         </div>
         <br />
         <div>
             <div class="label">End Date:</div>
+            <div>{{ endDate | date }}</div>
         </div>
         <br />
     </div>

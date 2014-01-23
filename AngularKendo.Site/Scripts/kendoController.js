@@ -6,8 +6,10 @@
 
     function kendoController($scope, $http) {
 
+        $scope.endDate;
         $scope.priorityText;
         $scope.priorityValue;
+        $scope.startDate;
         $scope.userText;
         $scope.userValue;
 

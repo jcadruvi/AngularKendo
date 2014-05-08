@@ -38,6 +38,7 @@ namespace AngularKendo.App_Start
                          "~/Scripts/kendoController.js",
                          "~/Scripts/kendoComboBoxDirective.js",
                          "~/Scripts/kendoDatePickerDirective.js",
+                         "~/Scripts/showDirective.js",
                          "~/Scripts/knockout-2.2.1.min.js",
                          "~/Scripts/knockout.mapping-latest.js",
                          "~/Scripts/modernizr-2.6.2.js",

@@ -6,7 +6,7 @@
 <div data-ng-app="app" data-ng-controller="kendoController">
     <div class="fieldLine">
         <div class="label">Priority:</div>
-        <div data-kendo-combo-box data-m-data="priorities" data-text="priorityText" data-value="priorityValue"></div>
+        <div data-kendo-combo-box data-m-data="service.priorities" data-text="Description" data-value="Id"></div>
     </div>
     <br />
     <div>
@@ -22,6 +22,16 @@
     <div>
         <div class="label">End Date:</div>
         <div data-kendo-date-picker data-value="endDate"></div>
+    </div>
+    <br />
+    <show-directive data="service.priorities"></show-directive>
+
+    <br />
+    <div>
+        <div ng-repeat="priority in service.priorities">
+            <div class="label">Priority:</div>
+            <div>{{ priority.Id }} - {{ priority.Description }}</div>
+        </div>
     </div>
 
     <div>

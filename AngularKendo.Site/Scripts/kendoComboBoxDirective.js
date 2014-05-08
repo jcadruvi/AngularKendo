@@ -34,7 +34,8 @@
                 value: scope.value
             });
             data = $(element[0]).data('kendoComboBox');
-            scope.$watch('mData', function () {
+            scope.$watch(function () { return scope.mData; }, function () {
+                console.log(scope.mData);
                 if (scope.mData && scope.mData.length > 0) {
                     data.dataSource.data(scope.mData);
                     data.value(scope.value);

@@ -5,6 +5,7 @@
     var app = angular.module('app', [
         // Angular modules 
         //'ngRoute'           // routing
+        'restangular'
     ]);
 
     app.config(['$locationProvider',

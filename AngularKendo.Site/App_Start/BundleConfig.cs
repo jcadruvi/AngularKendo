@@ -31,7 +31,10 @@ namespace AngularKendo.App_Start
             bundles.Add(new ScriptBundle("~/Scripts/layout.bundle.javascript")
                 .Include("~/Scripts/jquery-1.9.1.js",
                          "~/Scripts/angular.js",
+                         "~/Scripts/lodash.js",
+                         "~/Scripts/restangular.js",
                          "~/Scripts/app.js",
+                         "~/Scripts/baseRepository.js",
                          "~/Scripts/kendoController.js",
                          "~/Scripts/kendoComboBoxDirective.js",
                          "~/Scripts/kendoDatePickerDirective.js",

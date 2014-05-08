@@ -199,6 +199,7 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\baseRepository.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.validate.js" />
@@ -211,7 +212,10 @@
     <Content Include="Scripts\knockout-kendo.js" />
     <Content Include="Scripts\knockout.mapping-latest.js" />
     <Content Include="Scripts\ko.gridBinding.js" />
+    <Content Include="Scripts\lodash.js" />
+    <Content Include="Scripts\lodash.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\restangular.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

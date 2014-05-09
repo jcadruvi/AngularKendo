@@ -4,9 +4,9 @@
 }
 
 <div data-ng-app="app" data-ng-controller="kendoController">
-    <div class="fieldLine">
+    <div>
         <div class="label">Priority:</div>
-        <div data-kendo-combo-box data-m-data="service.priorities" data-text="Description" data-value="Id"></div>
+        <div data-kendo-combo-box data-m-data="service.priorities" data-text="priorityText" data-value="priorityValue"></div>
     </div>
     <br />
     <div>
@@ -24,39 +24,25 @@
         <div data-kendo-date-picker data-value="endDate"></div>
     </div>
     <br />
-    <show-directive data="service.priorities"></show-directive>
-
-    <br />
-    <div>
-        <div ng-repeat="priority in service.priorities">
-            <div class="label">Priority:</div>
-            <div>{{ priority.Id }} - {{ priority.Description }}</div>
-        </div>
-    </div>
-
     <div>
         <div>
             <h2>Selected Values</h2>
         </div>
         <div>
-            <div class="label">Priority:</div>
-            <div>{{ priorityValue }} - {{ priorityText }}</div>
+            <span class="label">Priority:</span>
+            <span ng-show="priorityValue && priorityText">{{ priorityValue }} - {{ priorityText }}</span>
         </div>
-        <br />
         <div>
-            <div class="label">Users:</div>
-            <div>{{ userValue }} - {{ userText }}</div>
+            <span class="label">Users:</span>
+            <span ng-show="userValue && userText">{{ userValue }} - {{ userText }}</span>
         </div>
-        <br />
         <div>
-            <div class="label">Start Date:</div>
-            <div>{{ startDate | date }}</div>
+            <span class="label">Start Date:</span>
+            <span>{{ startDate | date }}</span>
         </div>
-        <br />
         <div>
-            <div class="label">End Date:</div>
-            <div>{{ endDate | date }}</div>
+            <span class="label">End Date:</span>
+            <span>{{ endDate | date }}</span>
         </div>
-        <br />
     </div>
 </div>

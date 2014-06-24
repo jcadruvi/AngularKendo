@@ -8,7 +8,7 @@
 
         self.restrict = 'A';
         self.scope = {
-            mData: '=',
+            data: '=',
             text: '=',
             value: '=',
         };
@@ -27,24 +27,24 @@
                 dataTextField: dataTextField,
                 dataValueField: dataValueField,
                 dataSource: {
-                    data: scope.mData
+                    data: scope.data
                 },
                 filter: "contains",
                 suggest: true,
                 value: scope.value
             });
             data = $(element[0]).data('kendoComboBox');
-            scope.$watch('mData', function () {
+            scope.$watch('data', function () {
                 $timeout(function () {
-                    if (scope.mData && scope.mData.length > 0) {
-                        data.dataSource.data(scope.mData);
+                    if (scope.data && scope.data.length > 0) {
+                        data.dataSource.data(scope.data);
                         data.value(scope.value);
                     }
                 });
             });
             scope.$watch('value', function () {
                 $timeout(function () {
-                    if (scope.mData && scope.mData.length > 0) {
+                    if (scope.data && scope.data.length > 0) {
                         data.value(scope.value);
                     }
                 });

@@ -33,7 +33,6 @@ namespace AngularKendo.App_Start
                          "~/Scripts/angular.js",
                          "~/Scripts/lodash.js",
                          "~/Scripts/app.js",
-                         "~/Scripts/baseRepository.js",
                          "~/Scripts/kendoController.js",
                          "~/Scripts/kendoComboBoxDirective.js",
                          "~/Scripts/kendoDatePickerDirective.js",

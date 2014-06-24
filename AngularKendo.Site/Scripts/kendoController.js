@@ -2,9 +2,9 @@
     'use strict';
 
     angular.module('app').controller('kendoController',
-        ['$scope', '$http', 'baseRepository', kendoController]);
+        ['$scope', '$http', kendoController]);
 
-    function kendoController($scope, $http, baseRepository) {
+    function kendoController($scope, $http) {
 
         $scope.endDate;
         $scope.priorityText;
@@ -15,9 +15,11 @@
 
         var service = {};
 
-        service.priorities = baseRepository.getDataAsArray('api/HomeApi/Priorities');
-        $scope.users = baseRepository.getDataAsArray('api/HomeApi/Users');
-
-        $scope.service = service;
+        $http.get('api/HomeApi/Priorities').success(function (result) {
+            service.priorities = result;
+        });
+        $http.get('api/HomeApi/Users').success(function (result) {
+            $scope.users = result;
+        });
     }
 })();

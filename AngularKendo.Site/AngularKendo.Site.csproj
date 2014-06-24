@@ -199,7 +199,6 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\app.js" />
-    <Content Include="Scripts\baseRepository.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.validate.js" />

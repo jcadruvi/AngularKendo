@@ -1,9 +1,9 @@
 ﻿(function () {
     'use strict';
 
-    angular.module('app').directive('kendoComboBox', ['$timeout', kendoComboBox]);
+    angular.module('app').directive('kendoComboBox', kendoComboBox);
 
-    function kendoComboBox($timeout) {
+    function kendoComboBox() {
         var self = {};
 
         self.restrict = 'A';
@@ -35,19 +35,15 @@
             });
             data = $(element[0]).data('kendoComboBox');
             scope.$watch('data', function () {
-                $timeout(function () {
-                    if (scope.data && scope.data.length > 0) {
-                        data.dataSource.data(scope.data);
-                        data.value(scope.value);
-                    }
-                });
+                if (scope.data && scope.data.length > 0) {
+                    data.dataSource.data(scope.data);
+                    data.value(scope.value);
+                }
             });
             scope.$watch('value', function () {
-                $timeout(function () {
-                    if (scope.data && scope.data.length > 0) {
-                        data.value(scope.value);
-                    }
-                });
+                if (scope.data && scope.data.length > 0) {
+                    data.value(scope.value);
+                }
             });
             if (scope.width) {
                 width = scope.width;

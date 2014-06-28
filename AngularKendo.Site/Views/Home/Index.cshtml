@@ -6,24 +6,23 @@
 <div data-ng-app="app" data-ng-controller="kendoController">
     <div>
         <div class="label">Priority:</div>
-        <div data-kendo-combo-box data-m-data="priorities" data-text="priorityText" data-value="priorityValue"></div>
+        <div data-kendo-combo-box data="priorities" data-text="priorityText" data-value="priorityValue"></div>
     </div>
     <br />
     <div>
         <div class="label">Users:</div>
-        <div data-kendo-combo-box data-m-data="users" data-text="userText" data-value="userValue"></div>
+        <div data-kendo-combo-box data="users" data-text="userText" data-value="userValue"></div>
     </div>
     <br />
     <div>
         <div class="label">Start Date:</div>
-        <input data-kendo-date-picker data-value="startDate"></input>
+        <input data-kendo-date-picker data-value="startDate"/>
     </div>
     <br />
     <div>
         <div class="label">End Date:</div>
-        <input data-kendo-date-picker data-value="endDate"></input>
+        <input data-kendo-date-picker data-value="endDate" />
     </div>
-    <br />
     <div>
         <div>
             <h2>Selected Values</h2>
